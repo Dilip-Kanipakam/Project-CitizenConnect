@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Dashboard from "./Dashboard";
-import Representatives from "./Representatives";    // <-- Import your component
+import Representatives from "./Representatives";
+import Updates from "./Updates"; // <-- Import your Updates component
 import "./App.css";
 import { FaUserCircle } from "react-icons/fa";
 
@@ -95,7 +96,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/issues" element={<IssuesPage />} />
-            <Route path="/representatives" element={<Representatives />} /> {/* <-- This enables your new page */}
+            <Route path="/representatives" element={<Representatives />} />
+            <Route path="/updates" element={<Updates />} /> {/* <-- ADD THIS LINE */}
           </Routes>
         </main>
         {showModal && (
