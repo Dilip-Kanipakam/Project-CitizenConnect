@@ -92,7 +92,7 @@ main {
 /* Modal Styles */
 .modal-overlay {
   position: fixed;
-  top: 0; left: 0; width: 100vw; height: 100vh;
+  top: 0; left: 0; width: 100vw; height: 100%;
   background: rgba(0,0,0,0.2);
   display: flex; align-items: center; justify-content: center;
   z-index: 999;
@@ -158,6 +158,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  min-height: 100%;
 }

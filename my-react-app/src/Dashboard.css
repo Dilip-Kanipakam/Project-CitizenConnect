@@ -1,5 +1,5 @@
 .dashboard {
-  width: 95vw;              /* Use 95% of viewport width */
+  width: 100%;              /* Use 95% of viewport width */
   max-width: 1400px;        /* Set a larger max-width for big screens */
   background-color: white;
   padding: 40px 24px 32px 24px;
