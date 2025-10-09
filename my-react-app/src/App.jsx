@@ -29,7 +29,7 @@ function IssuesPage() {
       <h2 style={{ color: "#6a47f2" }}>Issues</h2>
       {!showForm && !status && (
         <>
-          <p style={{ fontSize: 18, marginTop: 25 }}>You didn't raise an issue yet.</p>
+          <p style={{ fontSize: 18, marginTop: 25, color: "#6a47f2"}}>You didn't raise an issue yet.</p>
           <button className="modal-btn" onClick={() => setShowForm(true)} style={{marginTop:32}}>Click here to raise a complaint</button>
         </>
       )}
