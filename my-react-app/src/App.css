@@ -34,6 +34,21 @@ nav ul {
   padding: 0;
 }
 
+/* Make all nav menu items and links white */
+nav ul li,
+nav ul li a {
+  color: #fff !important;
+}
+
+/* Extra: ensure direct nav links are also white and styled */
+nav a {
+  color: #fff !important;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
 nav ul li {
   cursor: pointer;
 }
@@ -73,7 +88,6 @@ main {
   gap: 20px;
   margin-top: 20px;
 }
-
 
 /* Modal Styles */
 .modal-overlay {
@@ -115,9 +129,6 @@ main {
     flex-direction: column;
     align-items: flex-start;
   }
-
-
-
 }
 
 @media (max-width: 600px) {
@@ -131,6 +142,7 @@ main {
     padding: 0;
   }
 }
+
 .issues-block {
   width: 100%;           /* Make it fill the parent width */
   max-width: 1100px;     /* Match your dashboard's max-width */

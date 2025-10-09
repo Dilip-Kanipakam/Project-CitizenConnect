@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Dashboard from "./Dashboard";
+import Representatives from "./Representatives";    // <-- Import your component
 import "./App.css";
 import { FaUserCircle } from "react-icons/fa";
 
@@ -34,7 +35,7 @@ function IssuesPage() {
       )}
       {showForm && (
         <form onSubmit={handleSubmit} style={{ marginTop: 24 }}>
-          <textarea 
+          <textarea
             style={{
               width: "100%",
               height: 100,
@@ -78,8 +79,8 @@ const App = () => {
             <ul>
               <li><Link to="/">Dashboard</Link></li>
               <li><Link to="/issues">Issues</Link></li>
-              <li>Representatives</li>
-              <li>Updates</li>
+              <li><Link to="/representatives">Representatives</Link></li>
+              <li><Link to="/updates">Updates</Link></li>
               {!user ? (
                 <li><button className="signup-btn" onClick={handleSignUpClick}>Sign Up</button></li>
               ) : (
@@ -94,6 +95,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/issues" element={<IssuesPage />} />
+            <Route path="/representatives" element={<Representatives />} /> {/* <-- This enables your new page */}
           </Routes>
         </main>
         {showModal && (
