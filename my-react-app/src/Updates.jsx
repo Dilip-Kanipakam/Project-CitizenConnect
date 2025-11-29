@@ -1,22 +1,12 @@
 import React from "react";
 
-export default function Updates() {
+export default function Updates(){
   return (
-    <div
-      style={{
-        margin: "48px auto",
-        maxWidth: 700,
-        background: "#fff",
-        borderRadius: 16,
-        padding: "52px 38px",
-        boxShadow: "0 6px 24px rgba(0,0,0,0.10)",
-        textAlign: "center"
-      }}
-    >
-      <h2 style={{ color: "#6a47f2", marginBottom: 32 }}>Updates</h2>
-      <p style={{ fontSize: 20, color: "#999", marginTop: 20 }}>
-        No updates are there.
-      </p>
+    <div style={{ maxWidth: 760, margin: "48px auto", padding: "0 16px" }}>
+      <div className="card center-contents" style={{padding:40, textAlign:"center"}}>
+        <h2 style={{color:"#6a47f2", marginBottom:12}}>Updates</h2>
+        <p style={{color:"#888", fontSize:18}}>No updates are available at the moment.</p>
+      </div>
     </div>
   );
 }
